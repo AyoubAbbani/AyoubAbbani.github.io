@@ -273,3 +273,6 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #333097}";
     document.body.appendChild(css);
 };
+
+ 
+ 

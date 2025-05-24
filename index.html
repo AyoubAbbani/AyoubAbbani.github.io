@@ -3,12 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
 
         <!--==================== UNICONS ====================-->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/css/lightgallery.min.css">
         <!--==================== SWIPER CSS ====================-->
         <link rel="stylesheet" href="./packages/css/swiper-bundle.min.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+        <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Montserrat:300,600'>
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css'>
+      
         
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="./packages/css/styles.css">
@@ -69,72 +77,94 @@
 
         <!--==================== MAIN ====================-->
         <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                <div class="home__container container grid">
-                    <div class="home__content grid">
-                        <div class="home__social">
-                            <a href="https://www.linkedin.com/in/ayoub-abbani/" target="_blank" class="home__social-icon">
-                                <i class="uil uil-linkedin-alt"></i>
-                            </a>
-                            <a href="https://twitter.com/" target="_blank" class="home__social-icon">
-                                <i class="uil uil-twitter-alt"></i>
-                            </a>
-                            <a href="https://github.com/AyoubAbbani" target="_blank" class="home__social-icon">
-                                <i class="uil uil-github-alt"></i>
-                            </a>
-                        </div>
+            <section class='wrapper'>
+                <div class='hero'>
+                </div>
+                <div class='content'>
+                    <!--==================== HOME ====================-->
+                    <section class="home section" id="home">
+        
 
-                        <div class="home__img">
-                            <svg class="home__blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <mask id="mask0" mask-type="alpha">
-                                    <circle cx="100" cy="100" r="100" fill="white"/>
-                                </mask>
-                                <g mask="url(#mask0)">
-                                    <circle cx="100" cy="100" r="100" fill="white"/>
-                                    <image class="home__blob-img" x="0" y="0" width="200" height="200" xlink:href="packages/images/pras-1.jpeg" preserveAspectRatio="xMidYMid slice"/>
-                                </g>
-                            </svg>
-                        </div>
-                        
-                        
+                        <div class="home__container container grid">
+                            <div class="home__content grid">
+                                <div class="home__social">
+                                    <a href="https://www.linkedin.com/in/ayoub-abbani/" target="_blank" class="home__social-icon">
+                                        <i class="uil uil-linkedin-alt"></i>
+                                    </a>
+                                    <a href="https://twitter.com/" target="_blank" class="home__social-icon">
+                                        <i class="uil uil-twitter-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/AyoubAbbani" target="_blank" class="home__social-icon">
+                                        <i class="uil uil-github-alt"></i>
+                                    </a>
+                                </div>
 
-                        <div class="home__data">
-                            <!-- <h1 class="home__title">Hi there !  
-                                I'am Ayoub
-                            </h1> -->
-                            <!-- <h2 class="home__title">I'am Ayoub ABBANI</h2> -->
-                            <!-- <h3 class="home__subtitle">a C++ Software Engineer @EUROCONTROL.</h3> -->
-                            
-                            <h1>
-                                <a href="" class="typewrite" data-period="500" data-type='[ "Hi there !", "I am Ayoub a C++ Software Engineer at EUROCONTROL", "Working in Radar and ATM Surveillance "]'>
-                                <span class="wrap"></span>
+                                <div class="home__img">
+                                    <svg class="home__blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <mask id="mask0" mask-type="alpha">
+                                            <circle cx="100" cy="100" r="100" fill="white"/>
+                                        </mask>
+                                        <g mask="url(#mask0)">
+                                            <circle cx="100" cy="100" r="100" fill="white"/>
+                                            <image class="home__blob-img" x="0" y="0" width="200" height="200" xlink:href="packages/images/pras-1.jpeg" preserveAspectRatio="xMidYMid slice"/>
+                                        </g>
+                                    </svg>
+                                </div>
+            
+                                <div class="home__data">
+                                    <!-- <h1 class="home__title">Hi there !  
+                                        I'am Ayoub
+                                    </h1> -->
+                                    <!-- <h2 class="home__title">I'am Ayoub ABBANI</h2> -->
+                                    <!-- <h3 class="home__subtitle">a C++ Software Engineer @EUROCONTROL.</h3> -->
+                                    
+                                    <h1>
+                                        <a href="" class="typewrite" data-period="500" data-type='[ "Hi there !", "I am Ayoub a Software Engineer", "Current working at EUROCONTROL as a Surveillance Software Engineer "]'>
+                                        <span class="wrap"></span>
+                                        </a>
+                                    </h1>
+                                    <p class="home__description"> I have been working on Software development mainly in C++ & Python for the past 4 years, on QT5/QML,  Control Algorithms,  Embedded Software & tooling </p>
+                                    <p class="home__description"> Focusing on Radars system for Aviation Surviallance and GIS ✈️📡. Previously worked in R&D Automotive within Stellantis on Powertrain & ADAS 🚗.</p>
+                                    <a href="#contact" class="button button--flex home__button">
+                                        Interested in working together?<i class="uil uil-message button__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="home__scroll">
+                                <a href="#about" class="home__scroll-button button--flex">
+                                    <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                                    <span class="home__scroll-name">Scroll Down</span>
+                                    <i class="uil uil-arrow-down home__scroll-arrow"></i>
                                 </a>
-                            </h1>
-                            <p class="home__description">Focusing on Radars system for Aviation Surviallance and GIS ✈️📡. Previously worked in R&D Automotive within Stellantis around Powertrain & ADAS 🚗.</p>
-                            <a href="#contact" class="button button--flex home__button">
-                                Interested in working together?<i class="uil uil-message button__icon"></i>
-                            </a>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="home__scroll">
-                        <a href="#about" class="home__scroll-button button--flex">
-                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                            <span class="home__scroll-name">Scroll Down</span>
-                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
-                        </a>
-                    </div>
+                    
+                    </section>
+            <!-- <h1 class='h1--scalingSize' data-text='An awesome title'>An awesome title</h1> -->
                 </div>
             </section>
-
+ 
             <!--==================== ABOUT ====================-->
             <section class="about section" id="about">
                 <h2 class="section__title">Who Am I?</h2>
                 <span class="section__subtitle"> I code for machines, and I love what I do ! </span>
-            
+                
                 <div class="about__container container grid">
-                    <img src="packages/images/pras-2.jpeg" alt="" class="about__img">
+                    
+                    <div class="background-container">
+                        <img src="packages/images/pras-2.jpeg" alt="" class="about__img">
+                        <div classe = "boxy"> 
+                            <div class="rotating-box">
+                              <ul class="rotation-list">
+                                <li class="list-item item-1"><span></span></li>
+                                <li class="list-item item-2"><span></span></li>
+                                <li class="list-item item-3"><span></span></li>
+                              </ul>
+                            </div>
+                          </div>
+                      </div>
+                    
                     <div class="about__data">
                         <p class="about__description">
                             With a solid foundation in science and engineering, supported by a Bachelor of Science in Computer Engineering & Physics and a Master of Engineering in Mechatronics, 
@@ -144,9 +174,11 @@
                             I am a confident and naturally curious professional, constantly striving to enhance my skills. 
                             Transforming problems into innovative solutions is my passion.
                         </p>
+                                                  
+
                         <div class="about__info">
                             <div>
-                                <span class="about__info-title">03+</span>
+                                <span class="about__info-title">04+</span>
                                 <span class="about__info-name">Years <br> experience</span>
                             </div>
             
@@ -155,35 +187,41 @@
                                 <span class="about__info-name">companies<br>worked</span>
                             </div>
                         </div>
-                        <!-- New Section for Collaboration Logos -->
-                <div class="collaboration">
-                    <h3 class="home__subtitle">I'm proud to have collaborated with some awesome companies :</h3>
-                    <div class="logos">
-                        
-                        <img src="packages/images/EXPLEO.jpeg" alt="Exp" class="Exp__img">
-                        <img src="packages/images/STELLANTIS.jpeg" alt="STLA" class="STLA__img">
-                        
-                        <img src="packages/images/AKKODIS.jpeg" alt="AKKA" class="AKKA__img">
-                        <img src="packages/images/EUROCONTROL.jpeg" alt="ECTL" class="ECTL__img">
-                        <img src="packages/images/Thales-logo.png" alt="TS" class="TS__img">
-                        
-                    </div>
-                </div>
-                        
-            
+ 
+                
                 <div class="about__buttons">
                     <a download="Ayoub_ABBANI_RES_2024.pdf" href="packages/pdf/" class="button button--flex">
                         Download My Resume <i class="uil uil-download-alt button__icon"></i>
                     </a>
                 </div>
-                    </div>
+            </div>    
+            </div>
 
-                    
+            <div class="collaboration_container">
+                <div > <h1 class="collaboration_subtitle">I'm proud to have collaborated with some awesome companies !</h1></div>
+            </div>
+
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide bg-red-500"> <img src="packages/images/EXPLEO.png" alt="Exp" class="Exp__img"> </div>
+                    <div class="slide bg-purple-500"><img src="packages/images/STELLANTIS.png" alt="STLA" class="STLA__img"></div>
+                    <div class="slide bg-blue-500"><img src="packages/images/AKKODIS.png" alt="AKKA" class="AKKA__img"></div>
+                    <div class="slide bg-indigo-500"> <img src="packages/images/EUROCONTROL.png" alt="ECTL" class="ECTL__img"></div>
+                    <div class="slide bg-pink-500"><img src="packages/images/Thales-logo.png" alt="TS" class="TS__img"></div>
+                    <div class="slide bg-green-500"> <img src="packages/images/ALTEN.png" alt="AL" class="AL__img"></div>
+                    <!-- same 9 slides doubled (duplicate) -->
+                    <div class="slide bg-red-500"> <img src="packages/images/EXPLEO.png" alt="Exp" class="Exp__img"> </div>
+                    <div class="slide bg-purple-500"><img src="packages/images/STELLANTIS.png" alt="STLA" class="STLA__img"></div>
+                    <div class="slide bg-blue-500"><img src="packages/images/AKKODIS.png" alt="AKKA" class="AKKA__img"></div>
+                    <div class="slide bg-indigo-500"> <img src="packages/images/EUROCONTROL.png" alt="ECTL" class="ECTL__img"></div>
+                    <div class="slide bg-pink-500"><img src="packages/images/Thales-logo.png" alt="TS" class="TS__img"></div>
+                    <div class="slide bg-green-500"> <img src="packages/images/ALTEN.png" alt="AL" class="AL__img"></div>
                 </div>
-
-                
+            </div>
+            
             
             </section>
+
             
             
 
@@ -405,10 +443,62 @@
                        </div>
                     </div>
                 </div>
-            </section>
+
+            <!-- </section> -->
+
+        <!-- <section> -->
+            <div class="slider">
+                <div class="slide-track2">
+                    <div class="logo"> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5"/> </a></div>
+                    <div class="logo"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3"/> </a></div>
+                    <div class="logo"> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript"/> </a></div>
+                    <div class="logo"> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" /> </a></div>
+                    <div class="logo"> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql"/> </a></div>
+                    <div class="logo"> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="git" /> </a> </div>
+                    <div class="logo"> <a href="https://www.jenkins.io/"><img src="https://www.vectorlogo.zone/logos/jenkins/jenkins-official.svg"></a></div>
+                    <div class="logo1"> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://zimetrics.com/wp-content/uploads/2023/09/c.png" alt="c"/> </a></div>
+                    <div class="logo"> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://cdn.iconscout.com/icon/free/png-256/free-cplusplus-3628708-3029933.png" alt="cplusplus" /> </a></div>
+                    <div class="logo"> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/python/python-icon.svg" alt="python" > </a> </div>
+                    <div class="logo"><a href="https://www.qt.io/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/qtio/qtio-ar21.svg" alt="Qt" /> </a></div>
+                    <div class="logo"><a href="https://flask.palletsprojects.com/" target="_blank" rel="noreferrer"> 
+                        
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg" alt= "Flask" /> 
+                    </a></div>
+                    <div> <ul>
+                        <li>
+                          <a href="#">
+                            <i class="fab fa-edge"></i>
+                          </a>
+                        </li> </ul></div>
+                    <div class="logo"><a href="https://cmake.org/" target="_blank" rel="noreferrer"> 
+                        <img src="https://www.vectorlogo.zone/logos/cmake/cmake-ar21.svg " alt= "CMake" /> 
+                    </a></div>
+                    <div class="logo"><a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"> 
+                        <img src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-ar21.svg" alt= "VSC" /> 
+                    </a></div>
+                    <div class="logo"><a href="https://jupyter.org/" target="_blank" rel="noreferrer"> 
+                        <img src="https://www.vectorlogo.zone/logos/jupyter/jupyter-ar21.svg" alt="Jupyter "/> 
+                    </a></div>
+                    <div class="logo"> <a href=" https://www.atlassian.com/software/jira" target="_blank" rel="noreferrer"> 
+                        <img src="https://www.vectorlogo.zone/logos/atlassian_jira/atlassian_jira-ar21.svg " alt= "Jira" /> 
+                    </a></div>
+                    <div class="logo"><a href=" https://www.dspace.com/en/inc/home/applicationfields.cfm" target="_blank" rel="noreferrer"> 
+                        <img src="https://img.militaryaerospace.com/files/base/ebm/mae/image/2024/06/667c34c45ed6f00f32429c53-dspacelogo_original_rgb.png?auto=format%2Ccompress&w=250&width=250 " alt= "dSPACE" /> 
+                    </a></div>
+                    <div class="logo"><a href="https://www.vector.com/gb/en/products/products-a-z/software/canalyzer/ " target="_blank" rel="noreferrer"> 
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Vector_Informatik_Logo.svg" alt= "Vector"/> 
+                    </a></div>
+                    <div class="logo"><a href="https://www.realvnc.com/en/connect/download/viewer/ " target="_blank" rel="noreferrer"> 
+                        <img src="https://miro.medium.com/v2/resize:fit:320/1*sxOH_bqQD_5hj60AD-pTzg.png" alt= "VNCV"/> 
+                    </a></div>
+
+                </div>
+            </div>
+        </section>
+            
 
               <!--==================== QUALIFICATION ====================-->
-        <section class="qualification__section">
+        <section class="qualification__section"  id="qualification">
             <h2 class="section__title">Qualification</h2>
             <span class="section__subtitle">My personal journey</span>
 
@@ -425,305 +515,285 @@
                     </div>
                 </div>
 
-                <div class="qualification__sections">
-            <!--==================== QUALIFICATION CONTENT 1 ====================-->
-            <div class="qualification__content qualification__active" data-content id="education">
-             <!--==================== QUALIFICATION 1 ====================--> 
-                <div class="qualification__data">
-                    <div>
-                        <h3 class="qualification__title">Engineer's degree in Mechatronics </h3>
-                        <span class="qualification__subtitle">Sultan Moulay Salimane University - FST</span>
-                        <div class="qualification__calendar">
-                            <i class="uil uil-calendar-alt"></i>
-                            2018 - 2021 (3 years)
+            <div class="qualification__sections">
+
+
+                <!--==================== QUALIFICATION CONTENT 1 ====================-->
+                <div class="qualification__content qualification__active" data-content id="education">
+                    <!--==================== QUALIFICATION 1 ====================--> 
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Engineer's degree in Mechatronics </h3>
+                                <span class="qualification__subtitle">Sultan Moulay Salimane University - FST</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2018 - 2021 (3 years)
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
                         </div>
-                    </div>
+                    
+                    <!--==================== QUALIFICATION 3 ====================--> 
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Bachelor of Science - Computer Engineering & Physics</h3>
+                                <span class="qualification__subtitle">Mohammed V University in Rabat - Faculty of Sciences</span>
+                                <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2015 - 2018  (3 years)
+                                </div>
+                            </div>
 
-                    <div>
-                        <span class="qualification__rounder"></span>
-                        <span class="qualification__line"></span>
-                    </div>
-                </div>
-             
-            <!--==================== QUALIFICATION 3 ====================--> 
-                <div class="qualification__data">
-                    <div>
-                        <h3 class="qualification__title">Bachelor of Science - Computer Engineering & Physics</h3>
-                        <span class="qualification__subtitle">Mohammed V University in Rabat - Faculty of Sciences</span>
-                        <div class="qualification__calendar">
-                        <i class="uil uil-calendar-alt"></i>
-                        2015 - 2018  (3 years)
-                        </div>
-                    </div>
-
-                    <div>
-                        <span class="qualification__rounder"></span>
-                        <span class="qualification__line"></span>
-                    </div>
-                </div> 
-
-
-            </div>
-            
-            <!--==================== QUALIFICATION CONTENT 2 ====================-->
-            <div class="qualification__content" data-content id="work">
-                <!--==================== QUALIFICATION 1 ====================--> 
-                <div class="qualification__data">
-                    <div>
-                        <h3 class="qualification__title">Software engineer</h3>
-                        <span class="qualification__subtitle">EUROCONTROL via Akkodis & Thales - Brussels, Belgium</span>
-                        <div class="qualification__calendar">
-                           <i class="uil uil-calendar-alt"></i>
-                           2023 - present 
-                        </div>
-                    </div>
-   
-                    <div>
-                        <span class="qualification__rounder"></span>
-                        <span class="qualification__line"></span>
-                    </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div> 
                 </div>
                 
-                <!--==================== QUALIFICATION 2 ====================--> 
-                <div class="qualification__data">
-                   <div></div>
-                   <div>
-                      <span class="qualification__rounder"></span>
-                      <span class="qualification__line"></span>
-                   </div>
-   
-                   <div>
-                       <h3 class="qualification__title">Software Engineer</h3>
-                       <span class="qualification__subtitle">STELLANTIS via Expleo - Tangier & Paris, France</span>
-                       <div class="qualification__calendar">
-                          <i class="uil uil-calendar-alt"></i>
-                          2022 - 2023 ( 1 years 6 months)
-                       </div>
-                   </div>
-               </div> 
-   
-               <!--==================== QUALIFICATION 3 ====================--> 
-               <div class="qualification__data">
-                   <div>
-                       <h3 class="qualification__title">Software Integration Engineer</h3>
-                       <span class="qualification__subtitle">STELLANTIS - Casablanca, Morocco</span>
-                       <div class="qualification__calendar">
-                          <i class="uil uil-calendar-alt"></i>
-                          03/2021 - 12/2021 (10 months)
-                       </div>
-                   </div>
-   
-                   <div>
-                       <span class="qualification__rounder"></span>
-                       <!-- <span class="qualification__line"></span> -->
-                   </div>
-               </div> 
-          
-               </div> 
+                <!--==================== QUALIFICATION CONTENT 2 ====================-->
+                <div class="qualification__content" data-content id="work">
+                    <!--==================== QUALIFICATION 1 ====================--> 
+                    <div class="qualification__data">
+                        <div>
+                            <h3 class="qualification__title">Software engineer</h3>
+                            <span class="qualification__subtitle">EUROCONTROL via Akkodis & Thales - Brussels, Belgium</span>
+                            <div class="qualification__calendar">
+                            <i class="uil uil-calendar-alt"></i>
+                            2023 - present 
+                            </div>
+                        </div>
+    
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                    </div>
+                
+                    <!--==================== QUALIFICATION 2 ====================--> 
+                    <div class="qualification__data">
+                        <div></div>
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+        
+                        <div>
+                            <h3 class="qualification__title">Software Engineer</h3>
+                            <span class="qualification__subtitle">STELLANTIS via Expleo - Tangier & Paris, France</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2022 - 2023 ( 1 years 6 months)
+                            </div>
+                        </div>
+                    </div> 
+        
+                    <!--==================== QUALIFICATION 3 ====================--> 
+                    <div class="qualification__data">
+                        <div>
+                            <h3 class="qualification__title">Software Integration Engineer</h3>
+                            <span class="qualification__subtitle">STELLANTIS - Casablanca, Morocco</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                03/2021 - 12/2021 (10 months)
+                            </div>
+                        </div>
+        
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <!-- <span class="qualification__line"></span> -->
+                        </div>
+                    </div> 
+            
+                </div> 
              
-               </div>
             </div>
-        </section>
+        </div>
+    </section>
       
         <!--==================== SERVICES ====================-->
-        <section class="services section" id="services">
+        <section class="services section"  id="services" >
             <h2 class="section__title">Services</h2>
             <span class="section__subtitle">What I offer</span>
-
             <div class="services__container container grid">
-        <!--==================== SERVICES 1 ====================-->  
-        <div class="services__content">
-            <div>
-                <i class="uil uil-analytics skills__icon"></i>
-                <h3 class="services__title"> Software developement <br></h3>
-            </div>
-            <span class="button button--flex button--small button--link services__button">
-                View more
-                <i class="uil uil-arrow-right button__icon"></i>
-            </span>
+                <!--==================== SERVICES 1 ====================-->  
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-analytics skills__icon"></i>
+                        <h3 class="services__title"> Software developement <br></h3>
+                    </div>
 
-            <div class="services__modal">
-                <div class="services__modal-content">
-                    <h4 class="services__modal-title">Software developement <br></h4>
-                    <i class="uil uil-times services__modal-close"></i>
+                    <span class="button button--flex button--small button--link services__button">
+                        View more
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
 
-                    <ul class="services__modal-services grid">
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__modal-icon"></i>
-                            <p>Develop Software in Embedded and Windows and Linux environment.</p>
-                        </li>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Software developement <br></h4>
+                            <i class="uil uil-times services__modal-close"></i>
 
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__modal-icon"></i>
-                            <p>Writing automated tests and maintaining technical documentation.</p>
-                        </li>
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Develop Software in Embedded and Windows and Linux environment.</p>
+                                </li>
 
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__modal-icon"></i>
-                            <p> UI/UX.</p>
-                        </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Writing automated tests and maintaining technical documentation.</p>
+                                </li>
 
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__modal-icon"></i>
-                            <p>Visualizing graphs, charts and preparing reports and dashboards.</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>  
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p> UI/UX.</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Visualizing graphs, charts and preparing reports and dashboards.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>  
         
-        <!--==================== SERVICES 2 ====================--> 
-        <div class="services__content">
-            <div>
-                <i class="uil uil-money-bill skills__icon"></i>
-                <h3 class="services__title">Web Apps developement<br> </h3>
-            </div>
-            <span class="button button--flex button--small button--link services__button">
-                View more
-                <i class="uil uil-arrow-right button__icon"></i>
-            </span>
+                <!--==================== SERVICES 2 ====================--> 
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-money-bill skills__icon"></i>
+                        <h3 class="services__title">Web Apps developement<br> </h3>
+                    </div>
+                    <span class="button button--flex button--small button--link services__button">
+                        View more
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
 
-            <div class="services__modal">
-                <div class="services__modal-content">
-                    <h4 class="services__modal-title">Web Apps developement<br></h4>
-                    <i class="uil uil-times services__modal-close"></i>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Web Apps developement<br></h4>
+                            <i class="uil uil-times services__modal-close"></i>
 
-                    <ul class="services__modal-services grid">
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__modal-icon"></i>
-                            <p>Develop the web page front-end.</p>
-                        </li>
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Develop the web page front-end.</p>
+                                </li>
 
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__modal-icon"></i>
-                            <p>Develop the REST API & Algorithms in the server side.</p>
-                        </li>
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__modal-icon"></i>
-                            <p> Test and Deployement.</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>  
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Develop the REST API & Algorithms in the server side.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p> Test and Deployement.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>  
        
-        <!--==================== SERVICES 3 ====================-->
-        <div class="services__content">
-            <div>
-                <i class="uil uil-arrow services__icon"></i>
-                <h3 class="services__title">Technical support<br></h3>
-            </div>
-            <span class="button button--flex button--small button--link services__button">
-                View more
-                <i class="uil uil-arrow-right button__icon"></i>
-            </span>
+                <!--==================== SERVICES 3 ====================-->
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-arrow services__icon"></i>
+                        <h3 class="services__title">Technical support<br></h3>
+                    </div>
+                    <span class="button button--flex button--small button--link services__button">
+                        View more
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
 
-            <div class="services__modal">
-                <div class="services__modal-content">
-                    <h4 class="services__modal-title">Technical support<br></h4>
-                    <i class="uil uil-times services__modal-close"></i>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Technical support<br></h4>
+                            <i class="uil uil-times services__modal-close"></i>
 
-                    <ul class="services__modal-services grid">
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__modal-icon"></i>
-                            <p>Implementing new features & Upgrading lagcy code.</p>
-                        </li>
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Implementing new features & Upgrading lagcy code.</p>
+                                </li>
 
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__modal-icon"></i>
-                            <p>Investigating incidents and delivering prompt feedback.</p>
-                        </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Investigating incidents and delivering prompt feedback.</p>
+                                </li>
 
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__modal-icon"></i>
-                            <p>Analyzing incoming requirements and drafting technical specifications.</p>
-                        </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Analyzing incoming requirements and drafting technical specifications.</p>
+                                </li>
 
-                    </ul>
-                </div>
-            </div>
-        </div> 
-  
-       
+                            </ul>
+                        </div>
+                    </div>
+                </div>      
         </div>
         </section>
+
         <!--==================== PORTFOLIO ====================-->
-        <section class="portfolio section" id="portfolio">
-
-            <h2 class="section__title">Portfolio</h2>
-            <span class="section__subtitle">Most recent works</span>
-
-            <div class="portfolio__container container swiper-container">
-                <div class="swiper-wrapper">
-        <!--==================== PORTFOLIO 1 ====================-->
-        
-            <div class="portfolio__content grid swiper-slide">
-                <img src="./packages/images/portfolio1.jpg" alt="" class="portfolio__img">
-
-                <div class="portfolio_">
-                    <h3 class="portfolio__title">Modern Dashboard</h3>
-                    <p class="portfolio__description">Data analitical dashboard adaptable to all devices, 
-                        with ui components and animated interactions.</p>
-                    <a href="#" class="button button--flex button--small portfolio__button">
-                        Demo
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </a>
-                </div>
-            </div>
-
-            <!--==================== PORTFOLIO 2 ====================-->
-        
-            <div class="portfolio__content grid swiper-slide">
-                <img src="./packages/images/portfolio3.PNG" alt="" class="portfolio__img">
-
-                <div class="portfolio_">
-                    <h3 class="portfolio__title">E-Commerce website</h3>
-                    <p class="portfolio__description">Above Amazon clone is adaptable to all devices, with 
-                        ui components and animated interactions.</p>
-                    <a href="#" class="button button--flex button--small portfolio__button">
-                        Demo
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </a>
-                </div>
-            </div>
-
-            <!--==================== PORTFOLIO 3 ====================-->
-        
-            <div class="portfolio__content grid swiper-slide">
-                <img src="./packages/images/portfolio2.png" alt="" class="portfolio__img">
-
-                <div class="portfolio_">
-                    <h3 class="portfolio__title">Brand Design</h3>
-                    <p class="portfolio__description">Tesla Clone is adaptable to all devices, with 
-                        ui components and animated interactions.</p>
-                    <a href="#" class="button button--flex button--small portfolio__button">
-                        Demo
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </a>
-                </div>
-            </div>
-                </div>
-
-            <!-- add arrows-->
-            <div class="swiper-button-next">
-                <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-            </div>
-
-            <div class="swiper-button-prev">
-                <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-            </div>
-
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-            
-        
-        </div>
-
+        <section class="portfolio section" id="portfolio" >
+            <h2 class="section__title">Highlights from My Recent Work</h2>
+            <span class="section__subtitle">What I've Been Working On</span>
+            <div class="portfolio_parent">
+                <div class="Portfolio_section"> 
+                  <article class='gallery'>
+                  <a class='gallery-link' href='images\gride.png'>
+                    <figure class='gallery-image'>
+                      <img height='1400' src='images\gride.png' width='1000'>
+                      <figcaption>C++11/QT UI & GEOTIF Implementation in VERIF - 2023</figcaption>
+                    </figure>
+                  </a>
+                  <a class='gallery-link' href='images\SCN.gif'>
+                    <figure class='gallery-image'>
+                      <img height='1400' src='images\SCN.png' width='1200'>
+                      <figcaption>C++14 QT5 & QML Graphs to Disply Radar Data in VERIF - 2023/2024</figcaption>
+                    </figure>
+                  </a>
+                  
+                  <a class='gallery-link' href='images\edis.png'>
+                    <figure class='gallery-image'>
+                      <img height='1200' src='images\edis.png' width='1000'>
+                      <figcaption>Cloud-Based Desktop App Flask Python3 & Web Tech frontend - 2024</figcaption>
+                    </figure>
+                  </a>
+                  
+                  <a class='gallery-link' href='images\automate.png'>
+                    <figure class='gallery-image'>
+                      <img height='1200' src='images\automate.png' width='1600'>
+                      <figcaption>Python Desktop App Python & Tkinter - 2022</figcaption>
+                    </figure>
+                  </a>
+                  <a class='gallery-link' href='images\Autonomouscar.png'>
+                    <figure class='gallery-image'>
+                      <img height='1400' src='images\Autonomouscar.png' width='1000'>
+                      <figcaption>Photo caption</figcaption>
+                    </figure>
+                  </a>
+                  <a class='gallery-link' href='images\AMSA.gif'>
+                    <figure class='gallery-image'>
+                      <img height='1400' src='images\win.png' width='1000'>
+                      <figcaption>AI applied to eco-mobility AMSA5 Edition by ALTEN - 2020/2021</figcaption>
+                    </figure>
+                  </a>
+                  <a class='gallery-link' href='images\yolo.gif'>
+                    <figure class='gallery-image'>
+                      <img height='1400' src='images\yolo.png' width='1000'>
+                      <figcaption>Real Time 2D Object Detection - YOLO/Python</figcaption>
+                    </figure>
+                  </a>
+                </article>
+              </div>
+          </div>
         </section>
 
         <!--==================== PROJECT IN MIND ====================-->
         <section class="project section">
-
             <div class="project__bg">
                 <div class="project__container container grid">
                     <div class="project__data">
@@ -847,7 +917,7 @@
                     </a>
                 </div>
             </div>
-            <p class="footer__copy">&#169; AAB. All @ rights reserved.</p>
+            <span class="section__subtitle"> AAB. © All rights reserved.</span>
         </div>
     </footer>
 
@@ -856,12 +926,18 @@
         <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
     
+<!--==================== SWIPER JS ====================-->
+<script src="./packages/js/swiper-bundle.min.js"></script>
 
-    <!--==================== SWIPER JS ====================-->
-    <script src="./packages/js/swiper-bundle.min.js"></script>
+<!--==================== MAIN JS ====================-->
+<script src="./packages/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/js/lightgallery.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js'></script>
+<script src='./packages/js/xgrmnr.js'></script>
+<script  src="./packages/js/index.js"></script>
 
-    <!--==================== MAIN JS ====================-->
-    <script src="./packages/js/main.js"></script>
 </body>
 
 </html>
